@@ -31,27 +31,6 @@
                     <option value="ex_colaborador">Ex colaborador</option>
                 </select>
             </div>
-
-            <div class="mb-3">
-                <label class="form-label">Marque con una X (Solo una opción)</label>
-                <div>
-                    <input type="radio" id="cliente" v-model="form.relacionRadio" value="cliente">
-                    <label for="cliente">Cliente/Abonado</label>
-                </div>
-                <div>
-                    <input type="radio" id="interesado" v-model="form.relacionRadio" value="interesado">
-                    <label for="interesado">Interesado</label>
-                </div>
-                <div>
-                    <input type="radio" id="colaborador" v-model="form.relacionRadio" value="colaborador">
-                    <label for="colaborador">Colaborador</label>
-                </div>
-                <div>
-                    <input type="radio" id="ex_colaborador" v-model="form.relacionRadio" value="ex_colaborador">
-                    <label for="ex_colaborador">Ex colaborador</label>
-                </div>
-            </div>
-
             <div class="mb-3">
                 <label class="form-label">Tipo de Solicitud (Marque con una X)</label>
                 <div>
@@ -192,20 +171,21 @@
 </div>
 
 <div class="mb-3">
-    <label class="form-label">Declaración (Marque con una X)</label>
-    <div>
-      <input type="checkbox" id="declaracion_verdad" v-model="form.declaracion" value="Declaro que la información proporcionada en este formulario es verdadera y completa, y en el caso de representar a un tercero, tengo autorización para hacerlo.">
-      <label for="declaracion_verdad">Declaro que la información proporcionada en este formulario es verdadera y completa, y en el caso de representar a un tercero, tengo autorización para hacerlo.</label>
-    </div>
-    <div>
-      <input type="checkbox" id="declaracion_identidad" v-model="form.declaracion" value="Entiendo que la empresa podrá solicitar información adicional para verificar mi identidad y procesar mi solicitud.">
-      <label for="declaracion_identidad">Entiendo que la empresa podrá solicitar información adicional para verificar mi identidad y procesar mi solicitud.</label>
-    </div>
-    <div>
-      <input type="checkbox" id="declaracion_consiento" v-model="form.declaracion" value="Consiento el tratamiento de mis datos personales para las finalidades que impliquen esta solicitud.">
-      <label for="declaracion_consiento">Consiento el tratamiento de mis datos personales para las finalidades que impliquen esta solicitud.</label>
-    </div>
+  <label class="form-label">Declaración (Seleccione una opción)</label>
+  <div>
+    <input type="radio" id="declaracion_verdad" v-model="form.declaracion" value="Declaro que la información proporcionada en este formulario es verdadera y completa, y en el caso de representar a un tercero, tengo autorización para hacerlo.">
+    <label for="declaracion_verdad">Declaro que la información proporcionada en este formulario es verdadera y completa, y en el caso de representar a un tercero, tengo autorización para hacerlo.</label>
   </div>
+  <div>
+    <input type="radio" id="declaracion_identidad" v-model="form.declaracion" value="Entiendo que la empresa podrá solicitar información adicional para verificar mi identidad y procesar mi solicitud.">
+    <label for="declaracion_identidad">Entiendo que la empresa podrá solicitar información adicional para verificar mi identidad y procesar mi solicitud.</label>
+  </div>
+  <div>
+    <input type="radio" id="declaracion_consiento" v-model="form.declaracion" value="Consiento el tratamiento de mis datos personales para las finalidades que impliquen esta solicitud.">
+    <label for="declaracion_consiento">Consiento el tratamiento de mis datos personales para las finalidades que impliquen esta solicitud.</label>
+  </div>
+</div>
+
   <div class="mb-3">
     <label class="form-label">Términos y Condiciones</label>
     <div>

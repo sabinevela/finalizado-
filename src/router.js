@@ -4,7 +4,7 @@ import GuardarDatos from './components/GuardarDatos.vue'
 
 const routes = [
   {
-    path: '/formulario',
+    path: '/',
     name: 'formulario',
     component: FormularioComponent
   },
