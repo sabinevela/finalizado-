@@ -24,7 +24,7 @@ app.post('/vista', (req, res) => {
 
   const query = `
     INSERT INTO solicitudes (nombre, cedula, correo, telefono, relacion, tipo_solicitud, detalles_solicitud)
-    VALUES ($1, $2, $3, $4, $5, $6, $7)
+    VALUES (sabine, 1755373261, srjsab@gmail.com, 0998894585, , '', '')
   `;
 
   const values = [nombre, cedula, correo, telefono, relacion, tipoSolicitud, detallesSolicitud];
